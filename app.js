@@ -21,7 +21,7 @@ const vessels = [
     quantity: 0
   }, {
 
-    name: 'WAFFLE BONE',
+    name: 'WAFFLE BOWL',
     price: 4,
     quantity: 0,
   }, {
@@ -64,11 +64,13 @@ let allItems = iceCream.concat(vessels.concat(toppings))
 function addItem(items) {
   allItems.find(i => i.name == items).quantity++
   drawCart()
+  drawTotal()
 }
 
 function removeItem(items) {
   allItems.find(i => i.name == items).quantity--
   drawCart()
+  drawTotal()
 }
 
 function drawTotal() {
@@ -82,16 +84,17 @@ function drawTotal() {
 function drawCart() {
   let cartElm = document.getElementById('checkout')
   let template = ''
-  allItems.filter(e => e.quantity > 0).forEach(e => {
+  allItems.filter(i => i.quantity > 0).forEach(i => {
     template += `
-    div class="row justify-content-between">
-    <div class="col-12">
+    <div class="col-12 d-flex justify-content-between">
       <p>${i.name}</p>
       <p>${i.quantity}</p>
       <p>${i.price}</p>
+      <p>${i.quantity * i.price}
     </div>
   </div>
 `
   })
   cartElm.innerHTML = template
 }
+console.log(allItems)

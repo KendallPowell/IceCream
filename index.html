@@ -34,13 +34,14 @@
             </p>
           </div>
           <div class="div col-12 checkout-box shadow-lg" id="checkout">
-            <!-- <div class="row justify-content-between">
+            <div class="row">
               <div class="col-12 d-flex justify-content-between">
-                <p>${i.name}</p>
+                <!-- <p>${i.name}</p>
                 <p>${i.quantity}</p>
                 <p>${i.price}</p>
+                <p>${i.quantity * i.price} -->
               </div>
-            </div> -->
+            </div>
           </div>
           <div class="col-10 total-box shadow-lg p-3 d-flex justify-content-between align-items-center">
             <p>Total:</p>
@@ -63,13 +64,13 @@
             <p class="text-dark ">SPRINKLES<span class="fs-4">$2</span></p>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem(items)"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('CHOCOLATE CHIPS')"
               src="https://s3-alpha-sig.figma.com/img/4563/1fdd/d28fd1feebaf761c45dc5c3c52353f84?Expires=1668384000&Signature=MMFcj1H1gp4iHfUG6Na96nQDm5gznuBxzRRO-1SgTR5h7od4LgVnUEWjlWL02ygTP2cJEwNozfzY8~6PpD3vtLyPdxVaNYK75NSL3gT8qqZAsnjtqlK0QEhPMmYRH3F26-G~flE2mi6Ut50fekG479Ca95SpiUM6Ter-7Mrac9vSrlAoCIeHadCYM9~RyqvJy~lSj4pHiDjqOMiVRiujdLjM5G8wvK3czuGkeaU8Z1X6VjpKGW~iF87RzOuiO0enSMNFkym5jzVqc4EcPmnDVEfk6p-xpD6spSvC4jR17jkVzEO9dElT0YJt2mxjDVviRWAnLdscJlP72x-FAuHT~g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Chocolate Chips">
             <p class="text-dark">CHOCOLATE CHIPS <span class="fs-4">$3</span></p>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem(items)"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('GUMMY WORMS')"
               src="https://s3-alpha-sig.figma.com/img/1f8e/065b/3c52f46f6e4d5c0fb1491d495cb4b1d6?Expires=1668384000&Signature=E9BpZGkId9Uaw3nb09sujp~Px0HDE~yOIsn8EI7geJEdhgulI72rLeLHVMUifwCW6a3m-6kOLmuzNwxc2xpCmqiEg-4dcY5Iuk2DuKgxuzHFodAqt658o6iVqmSzDB2pTw90SCAzGNdHcSYmyEnscJ~xHMYc1rbQjJ4BIEj9f~Wkj7D8PKWbJA1W2SDZu3s6Cmd2owEkIEXoxFLLSeGTc~BRWxv8YPxCPmmmFWPJCSBRj5QOpEWlCzfW7TTYhxnPzm9GchpCSSQIGPbYRENuBwGlC3NacTVY6N-6RthLoJs7SoYrA40lhu3Xp719uApRENkXdX0eYz1iKoFeaCX0eQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">GUMMY WORMS<span class="fs-4">$2</span></p>
@@ -80,19 +81,19 @@
             <h3 class="">Vessels!</h3>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('WAFFLE CONE')"
               src="https://s3-alpha-sig.figma.com/img/ecb4/afbe/55f39f92f2e18315951172219a75cef8?Expires=1668384000&Signature=K3n496iLYCfj7lJp-mtpd~zxWiQaUmKwd8muXLrPNZZwzw4AEISDVfPdghGvJh2CM5S2MXlIYMcRyqhaNV3okg3xGLMnkwXzvp7~QZaXMuy9RbVrFh2cOLY-NkBWXBy2uuFp5IgUp3ELm2BTJqIFxqMbOg0CxUillbx4BUcvOe1Jh0pygoM3uDBezJu7QjKkIp5zMFbkod2nx8oShEbJ4GiKma2rt1Hu3bYViQkHfGD-Zj4-TVxN98PMJeRuOqsn4yyaRfA0iNQhecj2BQtMpmv6qtLf0VYL4B9B2521KwCv~ngv2NimR45VbiYpNK4KSQcnsOnv0oV~UVaO4f92aQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">WAFFLE CONE<span class="fs-4">$3</span></p>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('WAFFLE BOWL')"
               src="https://s3-alpha-sig.figma.com/img/1048/6483/1f727a26e3db5fe6022ee7886dfa64b4?Expires=1668384000&Signature=OAlzo8tZGj-jjj1WFL4w7QWHuUxbQBfOi7Y1GP0-g213jtyXgT8Ro8hJMv1uHgO9lGxmvtedbRAQ8yzEQ2Jz09d-K8L4~9ns9dhl4W5SwdplYcfYJmmJgl7I0S8oOvyhIcH39Lo2D3LHQ4Bi7RqDHHqQhotBtybBptkP8aFknAqj0Mus88M54r0kof3uMImck~cruzV580ImbaaUszG-Kc~9H7GXQ23uPU-0qQXf09kXhebx4mIjYWfitioCZbZeA9sCuACosXvVsqM9RcEKz65i0lgmYZ-HR24tWg7EjVDFKAZ0iE3bzq4tg7g34apDtazBF677MmYxl6Lrkt4tVw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Chocolate Chips">
             <p class="text-dark">WAFFLE BOWL<span class="fs-4">$4</span></p>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('DIPPED CONE')"
               src="https://s3-alpha-sig.figma.com/img/ebba/ea1d/f0247a0ea72438fed57162b2241c4391?Expires=1668384000&Signature=SZUQzxGJnibDWMiWkd3GGwY4uKjf2iGqdki9M4yPDzX1GfIYyaDB3EunZDv8-1i5UKrQ24tsSSmCf~a6lWSWDHxWAVTv3NkTrAGb~ZQEC-NeNaRkh-1f5IpLH~rT4YZ~tL8icXEjPv5yRlyhVx4-22E1ZRdhg8EDxOflGJSZZt5~m61YdNJJxNn06YU4voY54iV~XWrGZmNMRqM4qhtKQsLZRo8vdVNfUc19qAnzw7iZvpwWsUAtvNxBYMJou-qpWq5L9agOt~Xd-miUTXzpXfr7JXMj6SfZKo6vJ3SlkjFgTQSqMClScfoS6mc5Yd3NCAdjHgrMbAmIvKXWPVpwSw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">DIPPED CONE<span class="fs-4">$5</span></p>
@@ -103,37 +104,37 @@
             <h3 class="">Ice Cream!</h3>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('VANILLA')"
               src="https://s3-alpha-sig.figma.com/img/dbe2/efa5/7c8078a2a18522f6d5ce913dde88f344?Expires=1668384000&Signature=hAL8R6VfVEf8qXGt7pwNJ5JWyaDqTXvXjxKjdNPx1l5dJ5ZuYLAa5nQE5a6nQq~LZTIOj-y9VsGV61vYCrlQ8NI4Ib-6euy9d-xeS0NsXYZdUbq75jhIoWrcId8oc-SL5~HJZw7oSQ9E8TWphM3w1qE9kkS7k332BceYZOIS4wzLbg00BdsJWHUww9XJUny32~dIFcDhWTz54jivxGmAkV65gblL8nQOvluE8Ty4mxcrSvMZF0MjBYq4i5kI-ndJsGNFXZK8y6NEuK6Ih6egUDke-7G~SNVKGbvf9ubPHUSf~tWYeIJ5O9nG9ZC4kyR~Qw-sLIXFl92I8R2xiAckwQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">VANILLA<span class="fs-4">$3</span></p>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('CHOCOLATE')"
               src="https://s3-alpha-sig.figma.com/img/ed2d/2c33/a726f1edc3a3e5e3bfb835df81a0d6e0?Expires=1668384000&Signature=K3SbEph1qmP2mSwLihQ9NEre8hn6lhDo~xhGYHJ2iCC3J~cd51awP48BbIrc3o4Z-rPZv7DVwFa2g7ZolLHzjB6JiXSQmeaO8zTRs5-kSWkBuXNQJcvLMhpD4jKhm6~hlUET7yHabE0eDY6TPBPYOk57q~Q5OzCCaKWL3KHVNWAFZVapVC9bde3jiXBT7KdxhANEMoso0PGKe-HP9wifFafmsvfGkzwIskKudnz7wwGetkOSYtI9AmMPo~17biMFWmnnHXkS-PZPUQAek76AdhR0SgzmPCPD1EajfDWq0Rh8~uklbU2kRV~X9wAEGLOWNWsW~Z7EimlXjW7YBsJOEw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Chocolate Chips">
             <p class="text-dark">CHOCOLATE<span class="fs-4">$4</span></p>
           </div>
           <div class="col-3 content-box text-center">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('STRAWBERRY')"
               src="https://s3-alpha-sig.figma.com/img/95a1/f614/784459aeef6aeb3482b3aa62af0b1a9b?Expires=1668384000&Signature=QJ6qGd6vYkdP2yKuYVsRg6boUeBPpcLlYgNSWSwkIEwegL3tRZ1FfCaW0B971coz0xNj6UxamM1QxA6eH3AWxqmf~C~UrJniivMED4MF~hFG8myyVmKlFEJzqBTNcKxuvK2W4RzFllX95iC8GBE1jGycy6Unx7TODfa9X-NqK6vQ7P~Y2Atv6nz9wM4HyQuDJP~lKjUI2GlXKklWmnIjs9vgIVKmDJuMNJRAuBidmVV-b47OLuRZLhIdJfQyOrZpik6oApVyeZDZf8P4Mh~QwGeOxvhXcIpWcVVQ3iT6VizrPnndJiO7Azf5YYfHJOcfvTQO-p6YVVENISWgWMIJpQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">STRAWBERRY<span class="fs-4">$4</span></p>
           </div>
           <div class="col-3 content-box text-center my-3">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('COOKIE DOUGH')"
               src="https://s3-alpha-sig.figma.com/img/7340/40af/33e164ac923ea7a9430cb5aa9f35cabc?Expires=1668384000&Signature=bgES~BE~gaT2Ewzfr~F7eqV~xkFGiXzHceK1xQATjyyYJCjp7NcoDLkPhexobj-m6SvegGiA8udRkQ8g1qBV4P0YU6KW9pwdsBccVsQ0mDMzIA2pSwF-ctOhbBWVxRQAhyW3zVm0QzmRH5Lc3Pcr3~UUWQxqBb9QbK3Q4hIwLJemGA427iZGN08XYhdX44IRoJxj2e0ByrNeeIbG~X6DlXvXFhAqaLKy0RIo-lSAHiJYSdhADQkJM1~~t4euDEWsY8ZaAmARGma8TNh13CJny4sReQsko8JoNIGsCJkWz4qao2xzm4f8kwZ2FAXVBFSs3vcz8g4zkpV-BKB8rllo8Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">COOKIE DOUGH<span class="fs-4">$3</span></p>
           </div>
           <div class="col-3 content-box text-center my-3">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('MINT')"
               src="https://s3-alpha-sig.figma.com/img/f1d9/c502/5ae69be3883d5518915f26209bc1dd1e?Expires=1668384000&Signature=QwKHjIPhfQFOlUv6gPb2HzdNFtqDV1QNk-W~qxbwByJ5gLJDuL5B8Sy8DH0QrDWTKdFiYiSBmQHZTI9~7VEzyaf15LLEsVo9ETIJPU~T8fV8kKkjCuK51hKVkH9v8c3jrwZZh0ZZGsfnK9dVxYwxl2~XiLLW2EaEMr0Y6dF7pK9I4OVj2Wwu2Tu4FK1oHVgVK4BIlvZplJR7RWlpAFBYCBsPvssCrWxagEwVyPx0YFA6wbmomf2AdkmUgozc6t4koAcpfvKQK3k~Rccr9pQX3Qd~QTJWgWsxGm9SodIZH41UM40cbeWUmt63tJrN8Ow1yw9T~ecUpsX5hyV~EQOOAA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Chocolate Chips">
             <p class="text-dark">MINT<span class="fs-4">$4</span></p>
           </div>
           <div class="col-3 content-box text-center my-3">
-            <img class="img-fluid px-3 pt-2 ing-box"
+            <img class="img-fluid px-3 pt-2 ing-box" onclick="addItem('BIRTHDAY CAKE')"
               src="https://s3-alpha-sig.figma.com/img/17bf/497a/509e263359e53ef5046dec0f7f1c71db?Expires=1668384000&Signature=N4n7YR-cBgiVRJD~hPjpcl7UOp1uwQ9e9gYNHYjmVcRhqjzwNr15aHoAPMjJs~caBS0nLp8V0DOfRiQxEjPD1c9mwE8f3bLWFF-HsUuEOnhLW5ir1p7zms5i4ajt-TlMB-mJYH2Y6iWNiwpWbQ~Jf9dPiVAB6Y9safbIQ30RzXami-2AITVgzIZDp7rwqbf753IWh964ahdN9YH3rAmLh9M~xfvTKCF6534EZ2xhXhc5pz9nNsQ6E~GZpz1Qv3xg-9MOTkJnNAttUAKyoSruTqdPU506ZV3ve1-8dmHmmytVJslq9zMzNNZELQwPD4V-kCtWOmSg3r~DbycFItM-RA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
               alt="Sprinkles">
             <p class="text-dark ">BIRTHDAY CAKE<span class="fs-4">$4</span></p>
